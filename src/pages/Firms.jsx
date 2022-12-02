@@ -19,25 +19,6 @@ const Firms = () => {
   const { firms } = useSelector((state) => state.stock);
   const [open, setOpen] = useState(false);
   const [info, setInfo] = useState({});
-  // const dispatch = useDispatch();
-
-  // const { token } = useSelector((state) => state.auth);
-  // const BASE_URL = "https://10001.fullstack.clarusway.com/";
-
-  // const getFirms = async () => {
-  //   const url = "firms";
-  //   dispatch(fetchStart());
-  //   try {
-  //     const { data } = await axios.get(`${BASE_URL}stock/firms/`, {
-  //       headers: { Authorization: `Token ${token}` },
-  //     });
-  //     console.log(data);
-  //     dispatch(getSuccess({ data, url }));
-  //   } catch (error) {
-  //     dispatch(fetchFail());
-  //     console.log(error);
-  //   }
-  // };
 
   useEffect(() => {
     getFirms();
